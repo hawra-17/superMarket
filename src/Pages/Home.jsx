@@ -5,6 +5,7 @@ import veg from "../images/boo.png";
 import orange from "../images/orange.png";
 import meat from "../images/meat.png";
 import Basket1 from "../images/Basket1.png";
+import Slider from "./Slider";
 
 export default function Home() {
   return (
@@ -13,16 +14,15 @@ export default function Home() {
       <p className="text-black text-2xl" style={{ marginTop: "40px" }}>
         Top catogoary
       </p>
-      <div
-        className="flex"
-        style={{ gap: "20px", marginTop: "40px", marginBottom: "80px" }}
-      >
+      <div className="flex" style={{ marginTop: "40px", marginBottom: "80px" }}>
         <SmallCard title="Brows all " img={Basket1} />
         <SmallCard title="Vegetables" img={veg} />
         <SmallCard title="Meat" img={meat} />
         <SmallCard title="Fruits" img={orange} />
       </div>
+
       <Card2 style={{ marginTop: "40px", marginBottom: "80px" }} />
+      <Slider />
     </div>
   );
 }

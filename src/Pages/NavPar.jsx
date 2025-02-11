@@ -8,17 +8,25 @@ export default function NavBar() {
   ];
 
   return (
-    <div className="min-w-screen bg-white flex flex-col h-screen container mx-auto p-4 ">
+    <div className="min-w-screen bg-white flex flex-col h-screen container mx-auto p-4 sticky ">
       {/* Navigation Bar */}
       <header
-        className="  bg-zinc-500/25 p-4 flex justify-between sticky top-0 left-0 z-50"
+        className="  bg-zinc-500/25 p-4 flex justify-between sticky top-0 left-0 z-50 "
         style={{ marginBottom: "40px" }}
       >
         <div className="flex items-center gap-2">
-          <img src={Logo} alt="Logo" className="size-28" />
+          <img
+            src={Logo}
+            alt="Logo"
+            className="size-28"
+            style={{ marginLeft: "10px" }}
+          />
           <p className="text-black text-6xl">Lemona</p>
         </div>
-        <nav className="flex items-center gap-3 text-4xl">
+        <nav
+          className="flex items-center gap-3 text-4xl"
+          style={{ marginRight: "20px" }}
+        >
           {taps.map((tap) => (
             <Link
               to={`/${tap.path}`}

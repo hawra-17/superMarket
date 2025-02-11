@@ -6,7 +6,7 @@ import FastD from "../images/FastD.png";
 export default function Card2() {
   return (
     <div
-      className="bg-green-100 rounded-2xl shadow-lg flex flex-row mx-w-7xl mx-auto"
+      className="bg-green-100 rounded-2xl shadow-lg flex flex-row mx-w-7xl mx-auto "
       style={{ marginBottom: "50px" }}
     >
       <div
